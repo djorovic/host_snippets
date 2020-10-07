@@ -1,0 +1,104 @@
+---
+
+all:
+  
+  hosts:
+    opencon:
+      ansible_host: 93.93.194.244 
+      ansible_port: 8922
+      ansible_user: telmekom
+
+
+      ### Digital Cube Server ###
+
+    dc.server dcserver:
+      ansible_host: 93.93.194.244
+      ansible_port: 9999
+      ansible_user: digital
+
+
+    ### Digital Cube Hosts ###
+
+    adminbemapps.digitalcube.rs adminbemapps:
+      ansible_host: 93.93.194.244
+      ansible_port: 8311
+      ansible_user: digital
+
+
+    bemapps:
+      ansible_host: 93.93.194.244
+      ansible_port: 8311
+      ansible_user: digital
+
+
+    beminnovate.digitalcube.rs beminnovate:
+      ansible_host: 93.93.194.244
+      ansible_port: 8311
+      ansible_user: digital
+
+
+    fransize.dev.digitalcube.rs fransize.dev:
+      ansible_host: 93.93.194.244
+      ansible_port: 8422
+      ansible_user: digital
+
+
+    learnability.dev.digitalcube.rs learnability.dev:
+      ansible_host: 93.93.194.244
+      ansible_port: 8422
+      ansible_user: digital
+
+
+    opencon.dev.digitalcube.rs opencon.dev:
+      ansible_host: 93.93.194.244
+      ansible_port: 8922
+      ansible_user: telmekom
+
+
+    vivamarina.dev.digitalcube.rs vivamarina.dev:
+      ansible_host: 93.93.194.244
+      ansible_port: 8322
+      ansible_user: digital
+
+
+    ### Digital Cube - other VMs ###
+
+    dc.mojaradnja mojaradnja:
+      ansible_host: 93.93.194.244
+      ansible_port: 9900
+      ansible_user: digital
+
+
+    dc.sip_pjsua pjsua:
+      ansible_host: 93.93.194.244
+      ansible_port: 9898
+      ansible_user: digital
+
+
+    dc.teamcalendar teamcalendar:
+      ansible_host: 93.93.194.244
+      ansible_port: 9009 
+      ansible_user: digital
+
+
+    ### Digital Cube - Raspberries ###
+
+    rpi.camera camera:
+      ansible_host: 93.93.194.244
+      ansible_port: 22220
+      ansible_user: pi
+
+
+    rpi.sip_pjsua rpi.pjsua:
+      ansible_host: 93.93.194.244
+      ansible_port: 9314
+      ansible_user: pi
+
+
+    
+
+
+
+  vars:  
+    ansible_python_interpreter: /usr/bin/python3
+    pubkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiU0eLMJd/9hVewGBpqHRadLOHFk0ua4zX44wtU36zgyGLfKmHYY0Ep8yn6gkEXN99wQqNoBnkdhvTWv+26nP+6aJw1ptFt3dSRXv1NA1bwmi1SkNroFL4+ZYLFzt5knCUhzyjzLcPKLoi5yDLDhFZjrVTidFrcLXRsDKil6+QFP+gPdwIlnQlpM/oMJvnifwhG+qDDq7EWtsAG/LqS0yiiJ4fAKjANDFH0a60aFGqA4gT+fM6P5ZTX0pHOBqGixAX5FlHtu8iuLNTfo4PCbOxgDA1HNHsrtkmEozkeJ4EQqd8wVB510f8bkir61DtMAu9lk7g7ARLSBJkpcBEzEOx9rrKGFD7hi0xEdF0xE0q0P5kXeiQYyP9496CNQjM5/LKtO+yrEPpLxXzqrMRX2+JYQ0amLMBRDXJsbeWqZOrkKo7c/dEL0FsU/9uiwvZpveww6arevwRavxudNdVzZN0DiJzubGpmwIaNYhVd2LZjeTbJWCsnkzDgGkCH/Rns= igor-jeremic-2020-10-05"   
