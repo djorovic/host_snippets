@@ -1,0 +1,49 @@
+---
+
+all:
+  
+  hosts:
+    ### to be tested ###
+
+    Git.int.telmekom.net:
+      ansible_host: 10.128.0.55
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+      
+    Hotspot ruckus:
+      ansible_host: 10.81.16.59
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+      
+    Hotspot:
+      ansible_host: 10.128.0.56
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+  
+    Landing page:
+      ansible_host: 10.81.18.22
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+
+    Backup&Balancer prod:
+      ansible_host: 10.81.0.58
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+
+    Old openlink dispatcher:
+      ansible_host: 10.81.0.49
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+
+    OpenSync PROD:
+      ansible_host: 10.81.0.55
+      ansible_port:
+      ansible_user:
+      ansible_password: 
+      

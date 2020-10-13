@@ -6,4 +6,4 @@
     lineinfile:
       path: "/home/{{ansible_user}}/.ssh/authorized_keys"
       line: "{{ pubkey }}"
-      state: present  
+      state:  present 
