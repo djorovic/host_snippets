@@ -1,0 +1,13 @@
+---
+
+all:
+  
+  hosts:
+    portal:
+      ansible_host: 93.93.194.244 
+      ansible_port: 9011 
+      ansible_user: telmekom
+
+  vars:  
+    ansible_python_interpreter: /usr/bin/python3
+    pubkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiU0eLMJd/9hVewGBpqHRadLOHFk0ua4zX44wtU36zgyGLfKmHYY0Ep8yn6gkEXN99wQqNoBnkdhvTWv+MM26nP+6aJw1ptFt3dSRXv1NA1bwmi1SkNroFL4+ZYLFzt5knCUhzyjzLcPKLoi5yDLDhFZjrVTidFrcLXRsDKil6+QFP+gPdwIlnQlpM/oMJvnifwhG+qDDq7EWtsAG/LqS0yiiJ4fAKjANDFH0a60aFGqA4gT+fM6P5ZTX0pHOBqGixAX5FlHtu8iuLNTfo4PCbOxgDA1HNHsrtkmEozkeJ4EQqd8wVB510f8bkir61DtMAu9lk7g7ARLSBJkpcBEzEOx9rrKGFD7hi0xEdF0xE0q0P5kXeiQYyP9496CNQjM5/LKtO+yrEPpLxXzqrMRX2+JYQ0amLMBRDXJsbeWqZOrkKo7c/dEL0FsU/9uiwvZpveww6arevwRavxudNdVzZN0DiJzubGpmwIaNYhVd2LZjeTbJWCsnkzDgGkCH/Rns= igor-jeremic-2020-10-05"   

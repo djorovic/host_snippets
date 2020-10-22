@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  tasks:
+  - name: put pubkey
+    lineinfile:
+      path: "/home/{{ansible_user}}/.ssh/authorized_keys"
+      line: "{{ pubkey }}"
+      state: absent  

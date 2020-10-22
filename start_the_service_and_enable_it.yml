@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Start service qemu-guest-agent, if not running, and enable it
+    service:
+      name: qemu-guest-agent
+      state: started
+      enabled: yes

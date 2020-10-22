@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: install an additional package 
+    apt:
+      update_cache: yes
+      pkg:
+        - qemu-guest-agent  
+
