@@ -1,0 +1,15 @@
+---
+
+all:
+  
+  hosts:
+
+      ### Digital Cube External Hosts ###
+
+    d.ocean.dc.edu dc-edu dcedu:
+      ansible_host: 104.248.143.138
+      ansible_user: digital
+
+
+  vars:  
+    ansible_python_interpreter: /usr/bin/python3

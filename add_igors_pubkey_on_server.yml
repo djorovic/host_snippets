@@ -5,8 +5,8 @@ all:
   hosts:
     portal:
       ansible_host: 93.93.194.244 
-      ansible_port: 9011 
-      ansible_user: telmekom
+      ansible_port: 9015 
+      ansible_user: digital
 
   vars:  
     ansible_python_interpreter: /usr/bin/python3
