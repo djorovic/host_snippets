@@ -1,0 +1,94 @@
+---
+
+all:
+  
+  hosts:
+
+    ### Telmekom - Raspberries ###
+    rpi.opencon.telmekom.con rpi.opencon:
+      ansible_host: 10.81.18.48
+      ansible_user: pi
+
+    ### T E L M E K O M ###
+
+    tk.opencon.telmekom.com opencon.telmekom.com:
+      ansible_host: 10.81.0.69
+      ansible_user: telmekom
+
+    tk.opencounter opencounter:
+      ansible_host: 10.81.0.57
+      ansible_user: telmekom
+
+
+    tk.opencounter.backup opencounter.backup:
+      ansible_host: 10.81.0.61
+      ansible_user: telmekom
+
+
+    tk.fiware fiware:
+      ansible_host: 10.81.0.60
+      ansible_user: telmekom
+
+
+    tk.openclient openclient:
+       ansible_host: 10.81.0.65
+       ansible_user: telmekom
+
+
+    tk.cloudmeet cloudmeet:
+      ansible_host: 10.81.0.64
+      ansible_user: telmekom
+
+
+    tk.openlight.dev openlight.dev:
+      ansible_host: 10.81.18.44
+      ansible_user: digitalcube
+
+
+    tk.openlight.prod openlight.prod:
+      ansible_host: 10.64.0.11
+      ansible_user: telmekom
+
+
+    tk.openlink_dispatcher openlink_dispatcher:
+      ansible_host: 10.81.0.68
+      ansible_user: telmekom
+
+
+    one.telmekom.net crm.netikom.onetlc.net crm.hoila.onetlc.net:
+      ansible_host: 10.81.0.48
+      ansible_user: telmekom
+
+
+    staging.one.telmekom.net staging.crm.netikom.onetlc.net staging.crm.hoila.onetlc.net staging.website.one.telmekom.net:
+      ansible_host: 10.81.18.41
+      ansible_user: telmekom
+
+    developer.one.telmekom.net:
+      ansible_host: 10.81.0.59
+      ansible_user: telmekom
+
+    teamcalendar.int.telemkom.net:
+      ansible_host: 10.81.18.46
+      ansible_user: telmekom
+
+    openlink.dispatcher.old openlink.dispatcher.old:
+      ansible_host: 10.81.0.49
+      ansible_user: telmekom
+
+    opensync.prod opensync.prod:
+      ansible_host: 10.81.0.55
+      ansible_user: telmekom
+
+    backup-balancer.prod backupbalancer.prod:
+      ansible_host: 10.81.0.58
+      ansible_user: telmekom
+
+    landingpage landingpage:
+      ansible_host: 10.81.18.22
+      ansible_user: root
+
+
+  vars:  
+    ansible_python_interpreter: /usr/bin/python3
+    pubkey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiU0eLMJd/9hVewGBpqHRadLOHFk0ua4zX44wtU36zgyGLfKmHYY0Ep8yn6gkEXN99wQqNoBnkdhvTWv+MM26nP+6aJw1ptFt3dSRXv1NA1bwmi1SkNroFL4+ZYLFzt5knCUhzyjzLcPKLoi5yDLDhFZjrVTidFrcLXRsDKil6+QFP+gPdwIlnQlpM/oMJvnifwhG+qDDq7EWtsAG/LqS0yiiJ4fAKjANDFH0a60aFGqA4gT+fM6P5ZTX0pHOBqGixAX5FlHtu8iuLNTfo4PCbOxgDA1HNHsrtkmEozkeJ4EQqd8wVB510f8bkir61DtMAu9lk7g7ARLSBJkpcBEzEOx9rrKGFD7hi0xEdF0xE0q0P5kXeiQYyP9496CNQjM5/LKtO+yrEPpLxXzqrMRX2+JYQ0amLMBRDXJsbeWqZOrkKo7c/dEL0FsU/9uiwvZpveww6arevwRavxudNdVzZN0DiJzubGpmwIaNYhVd2LZjeTbJWCsnkzDgGkCH/Rns= igor-jeremic-2020-10-05"   
